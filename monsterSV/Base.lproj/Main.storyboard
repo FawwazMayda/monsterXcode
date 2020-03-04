@@ -96,6 +96,9 @@
                                 <rect key="frame" x="89" y="623" width="237" height="226"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="ButtonImage"/>
+                                <connections>
+                                    <action selector="fightDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yfe-tt-o1h"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="off-eO-5wg">
                                 <rect key="frame" x="302" y="489" width="59" height="30"/>
@@ -131,6 +134,8 @@
                     <connections>
                         <outlet property="char1Image" destination="R3y-jr-fTw" id="Jj4-9Q-tSl"/>
                         <outlet property="char2Image" destination="dzl-5o-wKy" id="d3H-0j-yTJ"/>
+                        <outlet property="leftLabel" destination="VZQ-1J-UyN" id="9nH-mW-oU7"/>
+                        <outlet property="rightLabel" destination="PNG-b2-Bkd" id="IMa-lz-OMV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
