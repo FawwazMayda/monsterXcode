@@ -19,7 +19,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         char1Image.image = #imageLiteral(resourceName: "Char1Yellow")
     }
-    
+    var leftScore = 0
+    var righScore = 0
     @IBAction func char1Red(_ sender: UIButton) {
         char1Image.image = #imageLiteral(resourceName: "Char1Red")
     }
@@ -45,7 +46,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func fightDidTap(_ sender: UIButton) {
-        
+        self.leftScore += 1
+        leftLabel.text = "\(leftScore)"
     }
     
     
