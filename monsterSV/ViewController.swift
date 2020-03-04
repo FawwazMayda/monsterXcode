@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var char2Image: UIImageView!
     @IBOutlet weak var leftLabel: UILabel!
     @IBOutlet weak var rightLabel: UILabel!
+    @IBOutlet weak var leftCharName: UILabel!
+    @IBOutlet weak var rightCharName: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -23,14 +25,17 @@ class ViewController: UIViewController {
     var righScore = 0
     @IBAction func char1Red(_ sender: UIButton) {
         char1Image.image = #imageLiteral(resourceName: "Char1Red")
+        leftCharName.text = "Mera"
     }
     
     @IBAction func char1Yellow(_ sender: UIButton) {
         char1Image.image = #imageLiteral(resourceName: "Char1Yellow")
+        leftCharName.text = "Sunny"
         
     }
     @IBAction func char1Green(_ sender: UIButton) {
         char1Image.image = #imageLiteral(resourceName: "Char1Green")
+        leftCharName.text = "Grea"
     }
     
     @IBAction func char2Red(_ sender: UIButton) {
