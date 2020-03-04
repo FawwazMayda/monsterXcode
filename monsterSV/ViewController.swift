@@ -9,12 +9,38 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var char1Image: UIImageView!
+    @IBOutlet weak var char2Image: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
+    
+    @IBAction func char1Red(_ sender: UIButton) {
+        char1Image.image = #imageLiteral(resourceName: "Char1Red")
+    }
+    
+    @IBAction func char1Yellow(_ sender: UIButton) {
+        char1Image.image = #imageLiteral(resourceName: "Char1Yellow")
+        
+    }
+    @IBAction func char1Green(_ sender: UIButton) {
+        char1Image.image = #imageLiteral(resourceName: "Char1Green")
+    }
+    
+    @IBAction func char2Red(_ sender: UIButton) {
+        char2Image.image = #imageLiteral(resourceName: "Char2Red")
+    }
+    
+    @IBAction func char2Yellow(_ sender: UIButton) {
+        char2Image.image = #imageLiteral(resourceName: "Char2Yellow")
+    }
+    
+    @IBAction func char2Green(_ sender: UIButton) {
+        char2Image.image = #imageLiteral(resourceName: "Char2Green")
+    }
+    
 }
 
