@@ -16,6 +16,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var rightLabel: UILabel!
     @IBOutlet weak var leftCharName: UILabel!
     @IBOutlet weak var rightCharName: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
